@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="boxCenter">
+  <div class="container home-page">
+    <div class="home-box">
+      <h1>Student Management System</h1>
+      <img src="https://m.media-amazon.com/images/I/714XB1zP6VL.png" alt="Logo" class="logo">
+      <p>Welcome to the Student Management System. Manage student records easily and efficiently.</p>
+      <button onclick="navigateTo('../Add Students/Add_Student.html')">Add Student</button>
+      <button onclick="navigateTo('../Show Students/Show_Students.html')">List of Students</button>
+    </div>
+  </div>
+</div>
+  <script>
+    function navigateTo(page) {
+      window.location.href = `${page}`;
+    }
+  </script>
+</body>
+</html>

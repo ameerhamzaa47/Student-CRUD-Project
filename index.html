@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Record Management</title>
+    <link rel="stylesheet" href="./User/style.css">
+</head>
+
+<body>
+    <div class="hero-section">
+        <div class="overlay"></div>
+
+        <div class="content">
+            <h1>Student Record Management</h1>
+            <p>Welcome to the Student Record Management System! Manage student records efficiently with our easy-to-use
+                platform. Track academic performance, manage records securely, and simplify data handling.</p>
+            <a href="#" class="btn-primary">Learn More</a>
+        </div>
+
+        <!-- Form Section -->
+        <div class="form-section">
+            <div class="container">
+                <div id="register-form" class="form colorful-form">
+                  <h2>Register</h2>
+                  <input type="text" id="register-username" placeholder="Username" required>
+                  <input type="email" id="register-email" placeholder="Email" required>
+                  <input type="password" id="register-password" placeholder="Password" required>
+                  <button onclick="registerUser()">Register</button>
+                  <p>Already have an account? <a href="./User/Login.html">Login here</a></p>
+                </div>
+              </div>
+        </div>
+    </div>
+    <script src="./User/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 80%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #28a745;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #28a745;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+@media (max-width: 600px) {
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    th {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+    }
+
+    td {
+        text-align: right;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: calc(50% - 20px);
+        padding-right: 10px;
+        text-align: left;
+        font-weight: bold;
+    }
+}
+
+.forEdit {
+    background-color: white;
+    color: black;
+    border: 2px solid #04AA6D;
+    border-radius: 10px;
+    height: 40px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.forEdit:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.forDelete {
+    background-color: white;
+    color: black;
+    border: 2px solid #f44336;
+    border-radius: 10px;
+    height: 40px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.forDelete:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.forFullData{
+    background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+  border-radius: 10px;
+  height: 40px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.forFullData:hover{
+    background-color: #008CBA;
+  color: white;
+}
+
+/* Model Styling */
+
+.modal-body {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: auto; 
+}
+
+.modal-body h1 {
+    font-size: 1.6rem;
+    color: #28a745;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase; 
+}
+
+.modal-body strong {
+    color: #28a745;
+    font-weight: 700; 
+    display: inline-block;
+    margin-bottom: 5px; 
+}
+
+.modal-body p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 10px 0;
+    color: #333;
+}
+
+
+
+
